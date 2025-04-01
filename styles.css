@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    height: 60px;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation Bar List */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if there's not enough space */
+    justify-content: flex-end; /* Align items to the right */
+    margin: 0;
+    padding: 0;
+    gap: 10px; /* Add spacing between items */
+}
+
+nav ul li {
+    margin: 0; /* Remove extra margin */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; /* Adjust font size for better fit */
+    padding: 5px 10px; /* Add padding for better clickability */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Toggle Button */
+.menu-toggle {
+    display: none; /* Hide toggle button by default */
+}
+
+/* General Section Styles */
+section {
+    padding: 100px 20px; /* Add padding to account for the fixed navigation bar */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Global Image Styles */
+img {
+    width: auto; /* Allow the image to maintain its aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Remove fixed height to prevent distortion */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Activities */
+.activities-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.activity-item {
+    text-align: center;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Adjusted styles for the home section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures proper layout on smaller screens */
+    padding: 120px 20px 20px; /* Ensure the home section is pushed down */
+    text-align: center; /* Centers text content */
+}
+
+.home .content {
+    flex: 1;
+    padding: 20px;
+}
+
+.home .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.home .content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.home .image-container {
+    flex: 1;
+    text-align: center; /* Centers the image horizontally */
+    margin-top: 20px; /* Add margin to move the image down slightly */
+}
+
+/* Home Section Image */
+.home .image-container img {
+    max-width: 300px; /* Ensure the image is visible */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Keep the circular shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure proper centering */
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stacks content vertically on smaller screens */
+    }
+
+    .home .content {
+        padding: 10px;
+    }
+
+    .home .image-container img {
+        max-width: 200px; /* Adjust image size for smaller screens */
+    }
+
+    .activities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center navigation items */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust spacing for stacked items */
+    }
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle button in mobile view */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        background: #333; /* Add background for better visibility */
+        position: absolute;
+        top: 60px; /* Place below the fixed navigation bar */
+        left: 0;
+        width: 100%;
+        display: none; /* Initially hide the menu */
+    }
+
+    nav ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between items */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+

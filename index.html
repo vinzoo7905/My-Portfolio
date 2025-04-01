@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinoth Kumar T - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navigation Bar */
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Align items vertically */
+            padding: 15px 30px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+            height: 60px; /* Set a fixed height for the navigation bar */
+        }
+
+        /* Home Section */
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap; /* Ensures proper layout on smaller screens */
+            padding: 120px 20px 20px; /* Add padding at the top to account for the navigation bar height */
+            text-align: center; /* Centers text content */
+        }
+
+        .home .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .home .content p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Vinoth Kumar T</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#interest">Interest</a></li>
+            <li><a href="#assignment">Assignment</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I am Vinoth Kumar T, a passionate student eager to learn and explore new opportunities.</p>
+        </div>
+        <div class="image-container">
+            <img src="assests/dp.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- About Me Section (Unchanged) -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio. My name is Vinoth Kumar T, and I am an enthusiastic learner with a keen interest in technology, innovation, and problem-solving. My goal is to explore new technologies and apply my skills to real-world problems.</p>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship">
+        <h2>Internship</h2>
+        <div class="internship-container">
+            <img src="assests/cert int.jpg" alt="Internship Image">
+            <p>Optimizing iron recovery from induction furnace slag, I engineered a multi-stage magnetic separation process, boosting efficiency and sustainability. By fine-tuning magnetic field distribution and drum performance, I unlocked smarter, greener metal extraction—driving innovation in metallurgy.
+
+
+
+
+
+
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Interest Section -->
+    <section id="interest">
+        <h2>Interest</h2>
+        <div class="interest-container">
+            <div class="interest-item">
+                <img src="assests/any.png" alt="Interest 1">
+                <p>Thermal & Stress Analysis (ANSYS) – I am interested in mastering finite element analysis (FEA) to conduct virtual testing and predictive simulations, reducing material failures in aerospace, automotive, and marine applications.</p>
+            </div>
+            <div class="interest-item">
+                <img src="assests/Python_ML.jpg" alt="Interest 2">
+                <p>AI for Failure Prediction (Python, Scikit-Learn, TensorFlow) – I aim to leverage machine learning for predictive maintenance, defect detection, and process optimization, contributing to smarter and more efficient material analysis.</p>
+            </div>
+            <div class="interest-item">
+                <img src="assests/fus 368.png" alt="Interest 3">
+                <p>With the rise of additive manufacturing and digital twins, I seek to develop expertise in CAD modeling and simulation for designing metallurgical components, casting molds, and advanced alloy structures</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignment">
+        <h2>Assignment</h2>
+
+        <div class="assignment-section">
+            <h3>Industrial Prototype</h3>
+            <div class="assignment-container">
+                <div>
+                    <img src="proto1.jpg" alt="Prototype 1">
+                    <p>Details about Prototype 1.</p>
+                </div>
+                <div>
+                    <img src="proto2.jpg" alt="Prototype 2">
+                    <p>Details about Prototype 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="assignment-section">
+            <h3>Coding for Innovators</h3>
+            <div class="assignment-container">
+                <div>
+                    <img src="coding1.jpg" alt="Coding 1">
+                    <p>Details about Coding 1.</p>
+                </div>
+                <div>
+                    <img src="coding2.jpg" alt="Coding 2">
+                    <p>Details about Coding 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="assignment-section">
+            <h3>System Thinking</h3>
+            <div class="assignment-container">
+                <div>
+                    <img src="system1.jpg" alt="System 1">
+                    <p>Details about System 1.</p>
+                </div>
+                <div>
+                    <img src="system2.jpg" alt="System 2">
+                    <p>Details about System 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="assignment-section">
+            <h3>Electronics</h3>
+            <div class="assignment-container">
+                <div>
+                    <img src="elec1.jpg" alt="Electronics 1">
+                    <p>Details about Electronics 1.</p>
+                </div>
+                <div>
+                    <img src="elec2.jpg" alt="Electronics 2">
+                    <p>Details about Electronics 2.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities">
+        <h2>Activities</h2>
+        <div class="activities-container">
+            <div class="activity-item">
+                <img src="assests/FBB.png" alt="Activity 1">
+                <p>Actively engaged in my college's FABLAB (Fabrication Laboratory), where I explore rapid prototyping, 3D printing, and CNC machining. This hands-on experience has enhanced my skills in design, material processing, and digital fabrication, allowing me to bring innovative ideas to life through practical applications.</p>
+            </div>
+            <div class="activity-item">
+                <img src="assests/chess.jpg" alt="Activity 2">
+                <p>Represented my college chess team and contributed to our victory in the zonal tournament twice. Through strategic thinking and problem-solving, I have honed my analytical skills, decision-making, and adaptability—qualities that translate seamlessly into engineering and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: vinothkumar7905@gmail.com</p>
+        <p>Phone: 6379004070</p>
+    </section>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>
+
